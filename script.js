@@ -1,5 +1,5 @@
-
-var wishesString = "<div class='social'> <a href='https://youtu.be/ZUgyAVMg4zE'> <div class='socialItem'><img class='socialItemI' src='images/cmavin.jpg' alt=''></div> </a> <a target='_blank' href='https://github.com/Vinayak-09'> <div class='socialItem'><img class='socialItemI' src='images/john.jpg' alt=''></div> </a> <a target='_blank' href='https://wa.me/918600765857'> <div class='socialItem'><img class='socialItemI' src='images/dhinu.jpg' alt=''></div> </a> <a target='_blank' href='https://t.me/vinayak_09'> <div class='socialItem'><img class='socialItemI' src='images/sanoj.jpg' alt=''></div> </a> ";
+var firstpicString = "<img src='images/1.jpeg' class='resumeThumbnail'><label>Saksy Fav.Mummy</label><img src='images/2.jpeg' class='resumeThumbnail'><label>Saksy First Holy Communion with Granny</label><img src='images/3.jpeg' class='resumeThumbnail'><label>Saksy</label><img src='images/4.jpeg' class='resumeThumbnail'><label>Saksy's Soulmate</label><img src='images/5.jpeg' class='resumeThumbnail'><label>Saksy's Family</label><img src='images/first.jpg' class='resumeThumbnail'><label>Our Team 2023</label><img src='images/team.jpg' class='resumeThumbnail'><label>Our Team - 2019</label><";
+var wishesString = "<div class='social'> <a href='https://wa.me/919446437330'> <div class='socialItem'><img class='socialItemI' src='images/cmavin.jpg' alt=''></div> </a> <a target='_blank' href='https://wa.me/919446926229'> <div class='socialItem'><img class='socialItemI' src='images/john.jpg' alt=''></div> </a> <a target='_blank' href='https://wa.me/919400559217'> <div class='socialItem'><img class='socialItemI' src='images/dhinu.jpg' alt=''></div> </a> <a target='_blank' href='https://wa.me/919972264755'> <div class='socialItem'><img class='socialItemI' src='images/sanoj.jpg' alt=''></div> </a> ";
 function startFunction() {
     waitAndResponce("intro");
 }
@@ -73,8 +73,12 @@ function waitAndResponce(inputText) {
             }, 2000);
             break;
         case "help":
-            sendTextMessage("<span class='sk'><span class='bold'>'about'</span> - about the developer <br><span class='bold'>'our wishes'</span> - our wishes <br><span class='bold'>'clear'</span> - to clear conversation<br>");
+            sendTextMessage("<span class='sk'><span class='bold'>'about'</span> - about the developer <br><span class='bold'>'our wishes'</span> - our wishes <br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'our memories'</span> - Memories<br><span class='bold'>'team'</span> - Our Team<br>");
             break;
+
+        case "our memories":
+                sendTextMessage(firstpicString);
+                break;    
 
         case "our wishes":
             sendTextMessage("As the time approaches for you to embark on a new journey, we gather with mixed emotions of pride and a tinge of sadness to bid you<br>Your presence here has been nothing short of extraordinary, and we cannot emphasize enough how much your valuable contributions have impacted <br>Throughout your tenure at Viswajyothi, you have demonstrated exceptional dedication, passion, and expertise in your role, leaving an indelible mark on the minds and hearts of students and colleagues alike. Your commitment to fostering a spirit of innovation, academic excellence, and personal growth has been inspirational, setting new standards for the entire educational community of Viswajyothi.<br>");
@@ -85,7 +89,7 @@ function waitAndResponce(inputText) {
         case "about":
             sendTextMessage("🛠️💻 This chatbot is !<br><br>👨🏻‍💻 Designed and Developed by <a class='alink' target='_blank' href=''><span class='bold'>Sanoj Saju</a> </span>");
             break;
-        case "wishes":
+        case "team":
             sendTextMessage(wishesString);
             break;
         default:
